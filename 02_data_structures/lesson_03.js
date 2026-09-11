@@ -19,3 +19,23 @@ class Stack {
       return lastItem;
     }
 }
+
+class Queue {
+    constructor(){
+        this.items = []
+    }
+
+    enqueue(value){
+        this.items.push(value)
+    }
+
+    dequeue(){
+     const removedItem = this.items.shift()
+     return removedItem;
+    }
+
+    peek(){
+        const firstItem = this.items[0];
+        return firstItem;
+    }
+}
